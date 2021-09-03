@@ -1,0 +1,129 @@
+
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+    <meta name="generator" content="Hugo 0.80.0">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link rel="stylesheet" href="css/counter.css">
+      <link rel="stylesheet" href="C:\Users\akhil\Desktop\E-commerce\owl.carousel.css">
+      <link rel="stylesheet" href="C:\Users\akhil\Desktop\E-commerce\owl.carousel.min.js">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="C:\Users\akhil\Desktop\E-commerce\style.css">
+      <link rel="icon" href="C:\Users\akhil\Desktop\E-commerce\favicon (1).ico">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2290d2c5ca.js" crossorigin="anonymous"></script>
+    <title>Digirium Signup</title>
+
+    <link rel="canonical" href="https://getbootstrap.com/docs/4.6/examples/sign-in/">
+
+
+
+    <!-- Bootstrap core CSS -->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+
+
+    <!-- Favicons -->
+<link rel="apple-touch-icon" href="/docs/4.6/assets/img/favicons/apple-touch-icon.png" sizes="180x180">
+<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-32x32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon-16x16.png" sizes="16x16" type="image/png">
+<link rel="manifest" href="/docs/4.6/assets/img/favicons/manifest.json">
+<link rel="mask-icon" href="/docs/4.6/assets/img/favicons/safari-pinned-tab.svg" color="#563d7c">
+<link rel="icon" href="/docs/4.6/assets/img/favicons/favicon.ico">
+<meta name="msapplication-config" content="/docs/4.6/assets/img/favicons/browserconfig.xml">
+<meta name="theme-color" content="#563d7c">
+
+
+    <style>
+      .bd-placeholder-img {
+        font-size: 1.125rem;
+        text-anchor: middle;
+        -webkit-user-select: none;
+        -moz-user-select: none;
+        -ms-user-select: none;
+        user-select: none;
+      }
+
+      @media (min-width: 768px) {
+        .bd-placeholder-img-lg {
+          font-size: 3.5rem;
+        }
+      }
+    </style>
+
+
+    <!-- Custom styles for this template -->
+    <link href="public\css\styles.css" rel="stylesheet">
+  </head>
+  <body class="text-center">
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div class="container-fluid">
+     <a class="DIgirium navbar-brand" href="C:\Users\akhil\Desktop\E-commerce\index.html"><i class="fab fa-dyalog"></i><i class="fas fa-info"></i>girium</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="main_nav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="C:\Users\akhil\Desktop\E-commerce\index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="C:\Users\akhil\Desktop\E-commerce\myprofile.html">My profile</a></li>
+      <li class="nav-item"><a class="nav-link" href="C:\Users\akhil\Desktop\E-commerce\Mycart.html">Cart</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+    </ul>
+    </div> <!-- navbar-collapse.// -->
+   </div> <!-- container-fluid.// -->
+  </nav>
+
+
+
+<form action"/" class="form-signin" method="post">
+  <img class="mb-4" src="public\images\ScreensTransparent.png" alt="" width="72" height="72">
+  <h1 class="h3 mb-3 font-weight-normal">PLEASE SIGN UP FOR DIGIRIUM</h1>
+
+  <input name="fName" type="text"  class="form-control top" placeholder="First Name" required >
+  <input name="lName" type="text"  class="form-control middle" placeholder="Last Name" required>
+  <input name="email" type="email"  class="form-control bottom" placeholder="EMAIL" required>
+
+  <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+  <p class="mt-5 mb-3 text-muted">&copy; 2017-2021</p>
+</form>
+
+
+<!--javascript to fixed navbar at top of the page-->
+
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+window.addEventListener('scroll', function() {
+  if (window.scrollY > 50) {
+    document.getElementById('navbar_top').classList.add('fixed-top');
+    // add padding top to show content behind navbar
+    navbar_height = document.querySelector('.navbar').offsetHeight;
+    document.body.style.paddingTop = navbar_height + 'px';
+  } else {
+    document.getElementById('navbar_top').classList.remove('fixed-top');
+     // remove padding top from body
+    document.body.style.paddingTop = '0';
+  }
+});
+});
+</script>
+<footer id="footer">
+  <i class="icons-footer fab fa-facebook-square"></i>
+  <i class="icons-footer fab fa-twitter"></i>
+  <i class="icons-footer fab fa-instagram"></i>
+  <i class="icons-footer fas fa-envelope"></i>
+  <p>© Copyright 2021 Digirium</p>
+
+</footer>
+
+  </body>
+</html>

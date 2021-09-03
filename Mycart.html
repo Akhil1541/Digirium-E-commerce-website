@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/counter.css">
+    <link rel="stylesheet" href="C:\Users\akhil\Desktop\E-commerce\owl.carousel.css">
+    <link rel="stylesheet" href="C:\Users\akhil\Desktop\E-commerce\owl.carousel.min.js">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="C:\Users\akhil\Desktop\E-commerce\style.css">
+    <link rel="icon" href="C:\Users\akhil\Desktop\E-commerce\favicon (1).ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@1,700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/2290d2c5ca.js" crossorigin="anonymous"></script>
+
+    <title>My cart</title>
+  </head>
+  <body>
+    <nav id="navbar_top" class="navbar navbar-expand-lg navbar-dark bg-dark">
+   <div class="container-fluid">
+     <a class="DIgirium navbar-brand" href="C:\Users\akhil\Desktop\E-commerce\index.html"><i class="fab fa-dyalog"></i><i class="fas fa-info"></i>girium</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#main_nav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    <div class="collapse navbar-collapse" id="main_nav">
+    <ul class="navbar-nav ms-auto">
+      <li class="nav-item"><a class="nav-link" href="C:\Users\akhil\Desktop\E-commerce\index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="C:\Users\akhil\Desktop\E-commerce\myprofile.html">My profile</a></li>
+      <li class="nav-item"><a class="nav-link" href="C:\Users\akhil\Desktop\E-commerce\Mycart.html">Cart</a></li>
+      <li class="nav-item"><a class="nav-link" href="#">Cart</a></li>
+    </ul>
+    </div> <!-- navbar-collapse.// -->
+   </div> <!-- container-fluid.// -->
+  </nav>
+
+  <div class="card text-center dark">
+  <div class="card-header">
+  <b>your Cart</b>
+  </div>
+  <div class="card-body">
+    <h5 class="card-title">iphone 12</h5>
+    <p id="payment" class="card-text">Total amount <br>
+    <i class="fas fa-rupee-sign"></i><b>70000</b></p>
+    <a href="C:\Users\akhil\Desktop\E-commerce\order placed.html" class="btn btn-primary">Place order</a>
+  </div>
+  <div class="card-footer text-muted">
+    2 days delivery
+  </div>
+</div>
+<!-- <div class="container-fluid">
+  <!-- <div class="middle-container">
+  <div class="profile">
+    <img class="akhil_pic"src="C:\Users\akhil\Desktop\Web_development\perssonal_wesite_mit\Screenshot_20210611-225021~2.png" alt="akhl's_pic" height="280" width="290">
+    <h2>Hello.</h2>
+    <p class="intro" style="color: #151515;">My self Akhil and right now I'm a undergraduate student of computer science.</p>
+  </div>
+  <div class="container-fluid">
+  <h1> your product is iphone 11:  </h1>
+  </div>
+</div> --> -->
+
+
+
+
+      <!--javascript to fixed navbar at top of the page-->
+
+      <script>
+      document.addEventListener("DOMContentLoaded", function(){
+    window.addEventListener('scroll', function() {
+        if (window.scrollY > 50) {
+          document.getElementById('navbar_top').classList.add('fixed-top');
+          // add padding top to show content behind navbar
+          navbar_height = document.querySelector('.navbar').offsetHeight;
+          document.body.style.paddingTop = navbar_height + 'px';
+        } else {
+          document.getElementById('navbar_top').classList.remove('fixed-top');
+           // remove padding top from body
+          document.body.style.paddingTop = '0';
+        }
+    });
+    });
+      </script>
+      <footer id="footer">
+        <i class="icons-footer fab fa-facebook-square"></i>
+        <i class="icons-footer fab fa-twitter"></i>
+        <i class="icons-footer fab fa-instagram"></i>
+        <i class="icons-footer fas fa-envelope"></i>
+        <p>© Copyright 2021 Digirium</p>
+
+      </footer>
+  </body>
+</html>
